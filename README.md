@@ -1,7 +1,3 @@
-#About
-
-Attempts to make Trezor's example.js modular.
-
 # Usage
 
 ```javascript
