@@ -42,7 +42,7 @@ module.exports = trezor => (config = {}) => {
       try {
         const ret = cb(null, session)
         if(ret !== true) { // true is a potential future case where a Promise is not required
-          if(ret == null || !ret.then) {
+          if(ret == null || typeof ret.then !== 'function') {
             throw new Error('trezorSession callback must return a Promise')
           }
         }
