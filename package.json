@@ -1,0 +1,12 @@
+{
+  "name": "trezor-session",
+  "version": "1.0.0",
+  "description": "Helps make the Trezor easier to use by modularizing Trezor's example.js.",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "promptly": "^2.2.0",
+    "trezor.js-node": "^6.0.3"
+  }
+}
