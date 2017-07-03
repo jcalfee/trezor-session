@@ -130,7 +130,7 @@ module.exports = trezor => (config = {}) => {
     out('7 8 9')
     out('4 5 6')
     out('1 2 3')
-    promptly.prompt('PIN', {silent: true}, (err, pin) => {
+    promptly.prompt('PIN', {silent: true, output: process.stderr}, (err, pin) => {
       if(err) {
         callback(err)
       } else {
@@ -143,7 +143,7 @@ module.exports = trezor => (config = {}) => {
   * @param {Function<Error, string>} callback
   */
   function passphraseCallback(callback) {
-    promptly.prompt('Passphrase', {silent: true, default: ''}, (err, pass) => {
+    promptly.prompt('Passphrase', {silent: true, output: process.stderr, default: ''}, (err, pass) => {
       if(err) {
         callback(err)
       } else {

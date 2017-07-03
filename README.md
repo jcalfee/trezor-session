@@ -1,3 +1,5 @@
+[![NPM](https://img.shields.io/npm/v/trezor-session.svg)](https://www.npmjs.org/package/trezor-session)
+
 # Usage
 
 ```javascript
